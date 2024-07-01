@@ -33,9 +33,10 @@
                 <th scope="col">Actions</th>
               </tr>
             </thead>
+            {% for todo in alltodo %}
             <tbody>
                 
-                {% for todo in alltodo %}
+                
               <tr>
                 <th scope="row">{{loop.index}}</th>
                 <td>{{todo.title}}</td>
